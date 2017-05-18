@@ -26,6 +26,7 @@ RUN echo "deb [arch=amd64] http://apt-mo.trafficmanager.net/repos/dotnet-release
     wget \
     zip \
     dotnet-dev-${dotnet_tools_version} \
+    nuget \ 
     build-essential \
  && rm -rf /var/lib/apt/lists/* && apt-get clean
 
